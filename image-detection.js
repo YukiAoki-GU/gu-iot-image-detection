@@ -9,7 +9,7 @@ module.exports = function(RED) {
                 let options = {
                     pythonPath: "/usr/bin/python3"
                   };
-                  PythonShell.run('image-detection.py', null, function (err, result) {
+                  PythonShell.run('gu-iot-image-detection/image-detection.py', null, function (err, result) {
                    if (err) {
                         msg.payload = err;
                     } else {
